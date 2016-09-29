@@ -1,0 +1,609 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    android:paddingBottom="10dp">
+
+    <LinearLayout
+        android:id="@+id/Toteutus"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="352dp"
+            android:paddingTop="10dp">
+
+
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:text="Etappi 1. Arvioi ja kuvaile turvallisuustasoa. Ota kuva kohteesta."
+                android:ems="10"
+                android:minLines="2"
+                android:layout_alignParentTop="true"
+                android:layout_alignLeft="@+id/selostusKentta1"
+                android:layout_alignStart="@+id/selostusKentta1"
+                android:id="@+id/editText20"
+                android:layout_alignRight="@+id/kameraButton1"
+                android:layout_alignEnd="@+id/kameraButton1"
+                android:singleLine="false"
+                android:textAppearance="@style/TextAppearance.AppCompat"
+                android:gravity="top|left|center_vertical"
+                android:clickable="false"
+                android:editable="false"
+                android:enabled="false"
+                android:background="@drawable/tehtavan_kuvaus_pohja"
+                android:paddingLeft="5dp"
+                />
+
+
+            <ImageButton
+                android:layout_width="70dp"
+                android:layout_height="60dp"
+                android:background="@drawable/kameranappi"
+                android:layout_marginRight="16dp"
+                android:layout_marginEnd="16dp"
+                android:id="@+id/kameraButton1"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginBottom="9dp"
+                android:onClick="onButtonClick"
+                />
+
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:inputType="textMultiLine"
+                android:lines="4"
+                android:hint="Kirjoita selostus tähän"
+                android:ems="10"
+                android:id="@+id/selostusKentta1"
+                android:gravity="top|left"
+                android:layout_alignBottom="@+id/kameraButton1"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_marginLeft="10dp"
+                android:layout_marginStart="10dp"
+                android:background="@drawable/tekstikentta"
+                android:paddingLeft="10dp"
+                />
+
+            <RadioGroup
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/radio1"
+                android:layout_below="@+id/editText20"
+                android:paddingTop="25dp"
+                android:paddingLeft="10dp"
+                >
+
+                <RadioButton
+                        android:text="Kaikki OK"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/radioButton20"
+                        android:layout_above="@+id/radioButton30"
+                        android:layout_alignLeft="@+id/radioButton30"
+                        android:layout_alignStart="@+id/radioButton30"
+                        android:layout_marginBottom="12dp"
+                        android:paddingLeft="10dp"
+                    />
+
+                <!--android:button="@drawable/green_face"-->
+
+
+                <RadioButton
+                        android:text="Korjattavaa löytyy"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/radioButton30"
+                    android:layout_marginBottom="11dp"
+                    android:layout_above="@+id/radioButton40"
+                    android:layout_alignRight="@+id/radioButton40"
+                    android:layout_alignEnd="@+id/radioButton40"
+                    android:layout_marginRight="100dp"
+                    android:layout_marginEnd="100dp"
+                    android:paddingLeft="10dp"/>
+                <!--android:button="@drawable/yellow_face"-->
+
+
+                <RadioButton
+                    android:text="Vaarallinen tai selkeitä puutteita"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/radioButton40"
+                    android:layout_marginBottom="40dp"
+                    android:layout_above="@+id/selostusKentta1"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:paddingLeft="10dp"/>
+                <!--android:button="@drawable/red_face"-->
+
+
+            </RadioGroup>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="352dp"
+            android:paddingTop="10dp">
+
+            <ImageButton
+                android:layout_width="70dp"
+                android:layout_height="60dp"
+                android:background="@drawable/kameranappi"
+                android:layout_marginRight="16dp"
+                android:layout_marginEnd="16dp"
+                android:id="@+id/kameraButton2"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginBottom="9dp"
+                android:onClick="onButtonClick"/>
+
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:inputType="textMultiLine"
+                android:lines="4"
+                android:hint="Kirjoita selostus tähän"
+                android:ems="10"
+                android:id="@+id/selostusKentta2"
+                android:gravity="top|left"
+                android:layout_alignBottom="@+id/kameraButton2"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_marginLeft="10dp"
+                android:layout_marginStart="10dp"
+                android:background="@drawable/tekstikentta"
+                android:paddingLeft="10dp"
+                />
+
+            <RadioGroup
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@+id/editText21"
+                android:id="@+id/radio2"
+                android:paddingTop="25dp"
+                android:paddingLeft="10dp"
+                >
+                <RadioButton
+                    android:text="Kaikki OK"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/radioButton21"
+                    android:layout_above="@+id/radioButton31"
+                    android:layout_alignLeft="@+id/radioButton31"
+                    android:layout_alignStart="@+id/radioButton31"
+                    android:layout_marginBottom="12dp"
+                    android:paddingLeft="10dp"/>
+                <!--android:button="@drawable/green_face"-->
+
+
+                <RadioButton
+                android:text="Korjattavaa löytyy"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/radioButton31"
+                android:layout_above="@+id/radioButton41"
+                android:layout_alignLeft="@+id/radioButton41"
+                android:layout_alignStart="@+id/radioButton41"
+                android:layout_marginBottom="14dp"
+                android:paddingLeft="10dp"/>
+                <!--android:button="@drawable/yellow_face"-->
+
+                <RadioButton
+                    android:text="Vaarallinen tai selkeitä puutteita"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/radioButton41"
+                    android:layout_above="@+id/selostusKentta2"
+                    android:layout_alignRight="@+id/selostusKentta2"
+                    android:layout_alignEnd="@+id/selostusKentta2"
+                    android:layout_marginBottom="40dp"
+                    android:paddingLeft="10dp"/>
+                <!--android:button="@drawable/red_face"-->
+
+
+
+            </RadioGroup>
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Etappi 2. Arvioi ja kuvaile turvallisuustasoa. Ota kuva kohteesta."
+                android:ems="10"
+                android:lines="2"
+                android:layout_alignParentTop="true"
+                android:layout_alignLeft="@+id/selostusKentta2"
+                android:layout_alignStart="@+id/selostusKentta2"
+                android:id="@+id/editText21"
+                android:layout_alignRight="@+id/kameraButton2"
+                android:layout_alignEnd="@+id/kameraButton2"
+                android:singleLine="false"
+                android:textAppearance="@style/TextAppearance.AppCompat"
+                android:gravity="top|left|center_vertical"
+                android:clickable="false"
+                android:editable="false"
+                android:enabled="false"
+                android:background="@drawable/tehtavan_kuvaus_pohja"
+                android:paddingLeft="5dp"
+                />
+
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="352dp"
+            android:paddingTop="10dp">
+
+
+            <ImageButton
+                android:layout_width="70dp"
+                android:layout_height="60dp"
+                android:background="@drawable/kameranappi"
+                android:layout_marginRight="16dp"
+                android:layout_marginEnd="16dp"
+                android:id="@+id/kameraButton3"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginBottom="9dp"
+                android:onClick="onButtonClick"
+                />
+
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:inputType="textMultiLine"
+                android:lines="4"
+                android:hint="Kirjoita selostus tähän"
+                android:ems="10"
+                android:id="@+id/selostusKentta3"
+                android:gravity="top|left"
+                android:layout_alignBottom="@+id/kameraButton3"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_marginLeft="10dp"
+                android:layout_marginStart="10dp"
+                android:background="@drawable/tekstikentta"
+                android:paddingLeft="10dp"
+                />
+            <RadioGroup
+                android:paddingTop="25dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@+id/editText22"
+                android:id="@+id/radio3"
+                android:paddingLeft="10dp"
+                >
+                <RadioButton
+                    android:text="Kaikki OK"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/radioButton22"
+                    android:layout_above="@+id/radioButton32"
+                    android:layout_alignLeft="@+id/radioButton32"
+                    android:layout_alignStart="@+id/radioButton32"
+                    android:layout_marginBottom="12dp"
+                    android:paddingLeft="10dp"/>
+                <!--android:button="@drawable/green_face"-->
+
+
+                <RadioButton
+                android:text="Korjattavaa löytyy"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/radioButton32"
+                android:layout_above="@+id/radioButton42"
+                android:layout_alignLeft="@+id/radioButton42"
+                android:layout_alignStart="@+id/radioButton42"
+                android:layout_marginBottom="14dp"
+                android:paddingLeft="10dp"/>
+                <!--android:button="@drawable/yellow_face"-->
+
+
+
+
+                <RadioButton
+                    android:text="Vaarallinen tai selkeitä puutteita"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/radioButton42"
+                    android:layout_above="@+id/selostusKentta3"
+                    android:layout_alignRight="@+id/selostusKentta3"
+                    android:layout_alignEnd="@+id/selostusKentta3"
+                    android:layout_marginBottom="40dp"
+                    android:paddingLeft="10dp"/>
+                <!--android:button="@drawable/red_face"-->
+
+            </RadioGroup>
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Etappi 3. Arvioi ja kuvaile turvallisuustasoa. Ota kuva kohteesta."
+                android:ems="10"
+                android:lines="2"
+                android:minLines="2"
+                android:layout_alignParentTop="true"
+                android:layout_alignLeft="@+id/selostusKentta3"
+                android:layout_alignStart="@+id/selostusKentta3"
+                android:id="@+id/editText22"
+                android:layout_alignRight="@+id/kameraButton3"
+                android:layout_alignEnd="@+id/kameraButton3"
+                android:singleLine="false"
+                android:textAppearance="@style/TextAppearance.AppCompat"
+                android:gravity="top|left|center_vertical"
+                android:clickable="false"
+                android:editable="false"
+                android:enabled="false"
+                android:background="@drawable/tehtavan_kuvaus_pohja"
+                android:paddingLeft="5dp"
+                />
+
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="352dp"
+            android:paddingTop="10dp">
+
+
+            <ImageButton
+                android:layout_width="70dp"
+                android:layout_height="60dp"
+                android:background="@drawable/kameranappi"
+                android:layout_marginRight="16dp"
+                android:layout_marginEnd="16dp"
+                android:id="@+id/kameraButton4"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginBottom="9dp"
+                android:onClick="onButtonClick"
+                />
+
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:inputType="textMultiLine"
+                android:lines="4"
+                android:hint="Kirjoita selostus tähän"
+                android:ems="10"
+                android:id="@+id/selostusKentta4"
+                android:gravity="top|left"
+                android:layout_alignBottom="@+id/kameraButton4"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_marginLeft="10dp"
+                android:layout_marginStart="10dp"
+                android:background="@drawable/tekstikentta"
+                android:paddingLeft="10dp"
+                />
+
+            <RadioGroup
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@+id/editText23"
+                android:id="@+id/radio4"
+                android:paddingTop="25dp"
+                android:paddingLeft="10dp"
+                >
+                <RadioButton
+                    android:text="Kaikki OK"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/radioButton23"
+                    android:layout_above="@+id/radioButton33"
+                    android:layout_alignLeft="@+id/radioButton33"
+                    android:layout_alignStart="@+id/radioButton33"
+                    android:layout_marginBottom="12dp"
+                    android:paddingLeft="10dp"/>
+                <!--android:button="@drawable/green_face"-->
+
+
+                <RadioButton
+                android:text="Korjattavaa löytyy"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/radioButton33"
+                android:layout_above="@+id/radioButton43"
+                android:layout_alignLeft="@+id/radioButton43"
+                android:layout_alignStart="@+id/radioButton43"
+                android:layout_marginBottom="14dp"
+                android:paddingLeft="10dp"/>
+                <!--android:button="@drawable/yellow_face"-->
+
+
+                <RadioButton
+                    android:text="Vaarallinen tai selkeitä puutteita"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/radioButton43"
+                    android:layout_above="@+id/selostusKentta4"
+                    android:layout_alignRight="@+id/selostusKentta4"
+                    android:layout_alignEnd="@+id/selostusKentta4"
+                    android:layout_marginBottom="40dp"
+                    android:paddingLeft="10dp"/>
+                <!--android:button="@drawable/red_face"-->
+
+
+
+
+
+            </RadioGroup>
+
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Etappi 4. Arvioi ja kuvaile turvallisuustasoa. Ota kuva kohteesta."
+                android:ems="10"
+                android:lines="2"
+                android:minLines="2"
+                android:layout_alignParentTop="true"
+                android:layout_alignLeft="@+id/selostusKentta4"
+                android:layout_alignStart="@+id/selostusKentta4"
+                android:id="@+id/editText23"
+                android:layout_alignRight="@+id/kameraButton4"
+                android:layout_alignEnd="@+id/kameraButton4"
+                android:singleLine="false"
+                android:textAppearance="@style/TextAppearance.AppCompat"
+                android:gravity="top|left|center_vertical"
+                android:clickable="false"
+                android:editable="false"
+                android:enabled="false"
+                android:background="@drawable/tehtavan_kuvaus_pohja"
+                android:paddingLeft="5dp"
+                />
+
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="352dp"
+            android:paddingTop="10dp">
+
+
+            <ImageButton
+                android:layout_width="70dp"
+                android:layout_height="60dp"
+                android:background="@drawable/kameranappi"
+                android:layout_marginRight="16dp"
+                android:layout_marginEnd="16dp"
+                android:id="@+id/kameraButton5"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginBottom="9dp"
+                android:onClick="onButtonClick"/>
+
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:inputType="textMultiLine"
+                android:lines="4"
+                android:hint="Kirjoita selostus tähän"
+                android:ems="10"
+                android:id="@+id/selostusKentta5"
+                android:gravity="top|left"
+                android:layout_alignBottom="@+id/kameraButton5"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_marginLeft="10dp"
+                android:layout_marginStart="10dp"
+                android:background="@drawable/tekstikentta"
+                android:paddingLeft="10dp"
+                />
+
+            <RadioGroup
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@+id/editText24"
+                android:id="@+id/radio5"
+                android:paddingTop="25dp"
+                android:paddingLeft="10dp"
+                >
+                <RadioButton
+                    android:text="Kaikki OK"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/radioButton24"
+                    android:layout_above="@+id/radioButton34"
+                    android:layout_alignLeft="@+id/radioButton34"
+                    android:layout_alignStart="@+id/radioButton34"
+                    android:layout_marginBottom="12dp"
+                    android:paddingLeft="10dp"/>
+                <!--android:button="@drawable/green_face"-->
+
+
+
+                <RadioButton
+                android:text="Korjattavaa löytyy"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/radioButton34"
+                android:layout_above="@+id/radioButton44"
+                android:layout_alignLeft="@+id/radioButton44"
+                android:layout_alignStart="@+id/radioButton44"
+                android:layout_marginBottom="14dp"
+                android:paddingLeft="10dp"/>
+                <!--android:button="@drawable/yellow_face"-->
+
+
+                <RadioButton
+                    android:text="Vaarallinen tai selkeitä puutteita"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/radioButton44"
+                    android:layout_above="@+id/selostusKentta5"
+                    android:layout_alignRight="@+id/selostusKentta5"
+                    android:layout_alignEnd="@+id/selostusKentta5"
+                    android:layout_marginBottom="40dp"
+                    android:paddingLeft="10dp"/>
+                <!--android:button="@drawable/red_face"-->
+
+
+
+            </RadioGroup>
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Etappi 5.  Arvioi ja kuvaile turvallisuustasoa. Ota kuva kohteesta."
+                android:ems="10"
+                android:lines="2"
+                android:minLines="2"
+                android:layout_alignParentTop="true"
+                android:layout_alignLeft="@+id/selostusKentta5"
+                android:layout_alignStart="@+id/selostusKentta5"
+                android:id="@+id/editText24"
+                android:layout_alignRight="@+id/kameraButton5"
+                android:layout_alignEnd="@+id/kameraButton5"
+                android:singleLine="false"
+                android:textAppearance="@style/TextAppearance.AppCompat"
+                android:gravity="top|left|center_vertical"
+                android:clickable="false"
+                android:editable="false"
+                android:enabled="false"
+                android:background="@drawable/tehtavan_kuvaus_pohja"
+                android:paddingLeft="5dp"
+                />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="77dp"
+            android:paddingTop="10dp">
+
+            <ImageButton
+
+                android:background="@drawable/laheta_v2"
+                android:id="@+id/lahetaNappula"
+                android:layout_weight="1"
+                android:layout_marginLeft="70dp"
+                android:layout_marginStart="73dp"
+                android:layout_centerVertical="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+
+
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+    <!--<TextView-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_margin="@dimen/text_margin"-->
+        <!--android:text="@string/large_text" />-->
+
+</android.support.v4.widget.NestedScrollView>

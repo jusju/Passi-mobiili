@@ -9,14 +9,12 @@ import android.content.SharedPreferences;
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
 import android.graphics.Color;
-import android.media.Image;
 import android.net.Uri;
 import android.os.AsyncTask;
 import android.os.Bundle;
 import android.provider.MediaStore;
 import android.support.v4.app.NotificationCompat;
 import android.support.v4.content.ContextCompat;
-import android.support.v7.app.ActionBarActivity;
 import android.support.v7.app.AppCompatActivity;
 import android.text.method.ScrollingMovementMethod;
 import android.util.Log;
@@ -29,12 +27,10 @@ import android.widget.TabHost;
 import android.widget.TextView;
 import android.widget.Toast;
 
-
 import java.io.File;
 import java.io.FileInputStream;
 import java.io.FileOutputStream;
 import java.io.IOException;
-import java.lang.reflect.Array;
 import java.util.ArrayList;
 
 import okhttp3.MediaType;
@@ -172,27 +168,27 @@ public class Turvallisuuskavely_johdantoActivity extends AppCompatActivity {
             if (kameraButtonPressed == 1) {
                 // vaihetaan nappulan taustakuva
                 kuva1 = stringUri;
-                kameraButton1.setBackground(ContextCompat.getDrawable(context, R.drawable.red_face_pressed)
+                kameraButton1.setBackground(ContextCompat.getDrawable(context, R.drawable.thumb_up_pressed)
                 );
                 kameraButton1.setEnabled(false);
             } else if (kameraButtonPressed == 2) {
                 kuva2 = stringUri;
-                kameraButton2.setBackground(ContextCompat.getDrawable(context, R.drawable.red_face_pressed)
+                kameraButton2.setBackground(ContextCompat.getDrawable(context, R.drawable.thumb_up_pressed)
                 );
                 kameraButton2.setEnabled(false);
             } else if (kameraButtonPressed == 3) {
                 kuva3 = stringUri;
-                kameraButton3.setBackground(ContextCompat.getDrawable(context, R.drawable.red_face_pressed)
+                kameraButton3.setBackground(ContextCompat.getDrawable(context, R.drawable.thumb_up_pressed)
                 );
                 kameraButton3.setEnabled(false);
             } else if (kameraButtonPressed == 4) {
                 kuva4 = stringUri;
-                kameraButton4.setBackground(ContextCompat.getDrawable(context, R.drawable.red_face_pressed)
+                kameraButton4.setBackground(ContextCompat.getDrawable(context, R.drawable.thumb_up_pressed)
                 );
                 kameraButton4.setEnabled(false);
             } else if (kameraButtonPressed == 5) {
                 kuva5 = stringUri;
-                kameraButton5.setBackground(ContextCompat.getDrawable(context, R.drawable.red_face_pressed)
+                kameraButton5.setBackground(ContextCompat.getDrawable(context, R.drawable.thumb_up_pressed)
                 );
                 kameraButton5.setEnabled(false);
             }
